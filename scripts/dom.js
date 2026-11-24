@@ -233,6 +233,8 @@ function makeBaby(details) {
         default:
             console.log(`Default BabyMaking case has run`)
     }
+    console.log(babyImg.src);
+
     return babyImg;
 }
 
