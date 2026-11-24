@@ -19,21 +19,26 @@ const description = [
     }
 ]
 
-let color = 'green';
+const color = {
+    name: "",
+    changeColor: function(name) {
+        color.name = name;
+    }
+}
 
 function styleYellowBaby() {
-    color = 'yellow';
-    styleColorBaby(color);
+    color.changeColor("yellow")
+    styleColorBaby(color.name);
 }
 
 function styleGreenBaby() {
-    color = 'green';
-    styleColorBaby(color);
+    color.changeColor("green")
+    styleColorBaby(color.name);
 }
 
 function styleRedBaby() {
-    color = 'red';
-    styleColorBaby(color);
+    color.changeColor("red")
+    styleColorBaby(color.name);
 }
 
 function styleColorBaby(color) {

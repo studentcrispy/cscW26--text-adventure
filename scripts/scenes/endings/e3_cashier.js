@@ -1,8 +1,9 @@
 import { createPicture, addButtons, createButtons, changeScene } from "../../dom.js";
-
+import { color } from "../3_colorbaby.js";
 function styleCashierEnd() {
     console.log('ending 3 cashier run')
 
+    console.log(`current color is ${color.name}`);
     const div  = createPicture('e_3_cashier');
     div.style.marginRight = '16rem';
     document.body.append(div);

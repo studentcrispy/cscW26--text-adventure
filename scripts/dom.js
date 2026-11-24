@@ -30,7 +30,7 @@ function createPicture(sceneName) {
     mainDiv.style.width = 'fit-content'
     mainDiv.style.position = 'relative';
 
-    console.log(`sceneName is ${sceneName}`);
+    // console.log(`sceneName is ${sceneName}`);
     scenePictureImg.id = 'scenePictureImg'; // redundant
     scenePictureImg.style.display = 'block';
     scenePictureImg.style.margin = 'auto';
@@ -43,7 +43,7 @@ function createPicture(sceneName) {
 
 
     const index = sceneList.findIndex(scene => scene.sceneName === sceneName);
-    scenePictureImg.src = `${sceneList[index].imgUrl}`;
+    scenePictureImg.src = sceneList[index].getImgUrl();
     scenePictureImg.alt = `${sceneList[index].altText}`;
     mainDiv.append(scenePictureImg);
     return mainDiv;
@@ -222,13 +222,13 @@ function makeBaby(details) {
 
     switch (details) {
         case 'normal':
-            babyImg.src = `../../images/${color}_baby_small.png`
+            babyImg.src = `./../../images/${color.name}_baby_small.png`
             break;
         case 'bonnet':
-            babyImg.src = `../../images/${color}_baby_bonnet.png`
+            babyImg.src = `./../../images/${color.name}_baby_bonnet.png`
             break;
         case 'elite':
-            babyImg.src = `../../images/${color}_baby_elite.png`
+            babyImg.src = `./../../images/${color.name}_baby_elite.png`
             break;
         default:
             console.log(`Default BabyMaking case has run`)

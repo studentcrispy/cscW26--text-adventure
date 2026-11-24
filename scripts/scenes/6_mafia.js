@@ -68,7 +68,7 @@ function styleMafia() {
 
 function startStrengthGame(div, funny, restartBtn) {
     let strength = 0;
-    // strength = 24;
+    strength = 25;
     const strengthTxt = document.createElement('p');
     const training1 = document.createElement('button'); // baby pushups
     const continueBtn = document.createElement('button'); // prolly coulda used createButtons function here but too lazy to do it noow
