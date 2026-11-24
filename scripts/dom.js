@@ -222,13 +222,13 @@ function makeBaby(details) {
 
     switch (details) {
         case 'normal':
-            babyImg.src = `./../images/${color.name}_baby_small.png`
+            babyImg.src = `./images/${color.name}_baby_small.png`
             break;
         case 'bonnet':
-            babyImg.src = `./../images/${color.name}_baby_bonnet.png`
+            babyImg.src = `./images/${color.name}_baby_bonnet.png`
             break;
         case 'elite':
-            babyImg.src = `./../images/${color.name}_baby_elite.png`
+            babyImg.src = `./images/${color.name}_baby_elite.png`
             break;
         default:
             console.log(`Default BabyMaking case has run`)
